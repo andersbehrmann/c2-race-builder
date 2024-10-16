@@ -64,7 +64,7 @@ def main():
     duration_minutes = st.number_input("Duration (minutes)", min_value=1, step=1)
     event_name = st.text_input("Event Name", value="")
     type = st.selectbox("Type", ["boats", "bikes"], index=0)
-    number_of_athletes = st.number_input("Number of Athletes in each lane", min_value=1, step=1)
+    ## number_of_athletes = st.number_input("Number of Athletes in each lane", min_value=1, step=1)
 
     if st.button("Convert"):
         if uploaded_file is not None and duration_minutes and event_name:
