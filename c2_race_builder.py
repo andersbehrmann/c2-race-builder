@@ -39,7 +39,7 @@ def write_files(heats, output_dir, duration, event_name, type):
                 file.write('                        "name": "A2"\n')
                 file.write('                    }\n')
                 file.write('                ]\n')
-                file.write('            }\n')
+                file.write('            },\n')
             file.write('        ],\n')
             file.write('        "c2_race_id": "",\n')
             file.write(f'        "duration": {duration},\n')
