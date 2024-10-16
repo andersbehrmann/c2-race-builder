@@ -23,7 +23,7 @@ def write_files(heats, output_dir, duration, event_name, type, number_of_athlete
     for heat_number, entries in heats.items():
         file_path = os.path.join(output_dir, f"Heat{heat_number}.rac2")
         with open(file_path, mode='w') as file:
-            file.write('	{\n')
+            file.write('{\n')
             file.write('    "race_definition": {\n')
             file.write(f'        "{type}": [\n')
             for lane_number, team_name in entries:
@@ -39,8 +39,8 @@ def write_files(heats, output_dir, duration, event_name, type, number_of_athlete
                 file.write('                        "name": "A2"\n')
                 file.write('                    }\n')
                 file.write('                ]\n')
-                file.write('            },\n')
-            file.write('        ]\n')
+                file.write('            }\n')
+            file.write('        ],\n')
             file.write('        "c2_race_id": "",\n')
             file.write(f'        "duration": {duration},\n')
             file.write('        "duration_type": "time",\n')
@@ -52,7 +52,7 @@ def write_files(heats, output_dir, duration, event_name, type, number_of_athlete
             file.write('        "round": 1,\n') 
             file.write('        "split_value": 60,\n')
             file.write('        "team_scoring": "sum",\n')
-            file.write(f'        "team_size": {number_of_athletes},\n')
+            file.write(f'        "team_size": 2,\n')
             file.write('        "time_cap": 0\n')
             file.write('    }\n')
             file.write('}\n')
