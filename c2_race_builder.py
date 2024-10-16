@@ -76,7 +76,7 @@ def main():
             heats_data = read_csv(tmp_file_path)
             
             with TemporaryDirectory() as tmp_dir:
-                write_files(heats_data, tmp_dir, duration_seconds, event_name, type, number_of_athletes)
+                write_files(heats_data, tmp_dir, duration_seconds, event_name, type)
                 
                 zip_path = os.path.join(tmp_dir, "output_files.zip")
                 with zipfile.ZipFile(zip_path, 'w') as zipf:
@@ -93,7 +93,7 @@ def main():
                         mime="application/zip"
                     )
         else:
-            st.error("Please upload a CSV file, specify duration, and event name.")
+            st.error("Please upload a CSV file, specify duration and event name.")
 
 if __name__ == "__main__":
     main()
