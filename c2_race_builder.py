@@ -16,7 +16,7 @@ def read_csv(file_path):
             heats[heat_number].append((lane_number, team_name))
     return heats
 
-def write_files(heats, output_dir, duration, event_name, type, number_of_athletes):
+def write_files(heats, output_dir, duration, event_name, type):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
