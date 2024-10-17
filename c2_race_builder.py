@@ -66,6 +66,7 @@ def main():
         .stAppHeader {background-color: #000000}
         h1 {color: #ffffff}
         p, ol, li {color: #ffffff}
+        #bui1 {background-color: #444444}
         .stButton p {color: #000000}
         .stMain {background-color: #000000}
         .main {
@@ -76,7 +77,7 @@ def main():
         </style>
     """, unsafe_allow_html=True)
     
-    st.title("CSV to .rac2 Converter")
+    ##st.title("CSV to .rac2 Converter")
     st.markdown("This app converts a csv file to .rac2 files. The csv needs to have three columns:\n1. Heat Number\n2. Lane Number\n3. Team Name\n\nThe app will create a .rac2 file for each heat and compress them in a zip-file that you can download.")
 
 
