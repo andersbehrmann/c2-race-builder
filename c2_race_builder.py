@@ -58,7 +58,25 @@ def write_files(heats, output_dir, duration, event_name, type):
             file.write('}\n')
 
 def main():
+    st.set_page_config(page_title="CSV to .rac2 Converter", layout="wide")
+    
+    # Add custom CSS
+    st.markdown("""
+        <style>
+        h1 {color: #ffffff}
+        p {color: #ffffff}
+        .stButton p {color: #000000}
+        .main {
+            background-color: #000000;
+            border-radius: 10px;
+            color: #ffffff
+        }
+        </style>
+    """, unsafe_allow_html=True)
+    
     st.title("CSV to .rac2 Converter")
+    st.markdown("This app converts a csv file to .rac2 files. The csv needs to have three columns:\n1. Heat Number\n2. Lane Number\n3. Team Name\n\nThe app will create a .rac2 file for each heat and compress them in a zip-file that you can download.")
+
 
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     duration_minutes = st.number_input("Duration (minutes)", min_value=1, step=1)
