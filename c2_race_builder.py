@@ -66,7 +66,7 @@ def main():
         .stAppHeader {background-color: #000000}
         h1 {color: #ffffff}
         p, ol, li {color: #ffffff}
-        #bui1 {background-color: #444444}
+        .stMainMenuPopover {background-color: #444444}
         .stButton p {color: #000000}
         .stMain {background-color: #000000}
         .main {
