@@ -63,7 +63,7 @@ def main():
     # Add custom CSS
     st.markdown("""
         <style>
-        header {background-color: #000000}
+        .stAppHeader {background-color: #000000}
         h1 {color: #ffffff}
         p, ol, li {color: #ffffff}
         .stButton p {color: #000000}
