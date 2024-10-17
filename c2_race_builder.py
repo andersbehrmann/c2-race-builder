@@ -66,6 +66,7 @@ def main():
         h1 {color: #ffffff}
         p {color: #ffffff}
         .stButton p {color: #000000}
+        .stMain {background-color: #000000}
         .main {
             background-color: #000000;
             border-radius: 10px;
